@@ -110,7 +110,16 @@ def main(file_name: str) -> dict:
     ans["Real"] = no_nums_and_ids[0]
     ans["Identifiers"] = no_nums_and_ids[1]
 
+    #print out the result into two columns
+    table = []
     for k,v in ans.items():
-        print(f'{k}: {v}')
+        if v is not None:
+            if isinstance(v, list):
+                for item in v:
+                    table.append([k, item])
+            else:
+                table.append([k, v])
+
+    print(tabulate(table, headers=["Token", "Lexeme"], tablefmt="grid"))
 
 main('nput_scode.txt')
