@@ -1,3 +1,5 @@
+from tabulate import tabulate
+
 def clean_seperators(text: str) -> list[list[str], list[str]]:
 # [[stores all seperators], [updated text without seperators]]
     bank = [[], []]
