@@ -124,4 +124,4 @@ def main(file_name: str) -> dict:
 
     print(tabulate(table, headers=["Token", "Lexeme"], tablefmt="grid"))
 
-main('nput_scode.txt')
+main('input_scode.txt')
