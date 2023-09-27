@@ -113,4 +113,4 @@ def main(file_name: str) -> dict:
     for k,v in ans.items():
         print(f'{k}: {v}')
 
-main('nput_scode.txt')
+main('input_scode.txt')
