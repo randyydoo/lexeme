@@ -106,7 +106,7 @@ def main(file_name: str) -> dict:
     ans['Operators'] = no_ops[0] if no_ops[0] else None
 
     no_keywords = clean_keywords(no_ops[1][0])
-    ans['Keywrods'] = no_keywords[0] if no_keywords[0] else None
+    ans['Keywords'] = no_keywords[0] if no_keywords[0] else None
 
     no_nums_and_ids = clean_nums_and_identifiers(no_keywords[1][0])
     ans["Real"] = no_nums_and_ids[0]
