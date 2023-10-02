@@ -121,7 +121,7 @@ def main(file_name: str) -> dict:
                     table.append([k, item])
             else:
                 table.append([k, v])
-
-    print(tabulate(table, headers=["Token", "Lexeme"], tablefmt="grid"))
+    with open('output.txt', 'w') as f:
+        f.write(tabulate(table, headers=["Token", "Lexeme"], tablefmt="grid"))
 
 main('input_scode.txt')
